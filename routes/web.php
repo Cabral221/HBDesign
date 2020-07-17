@@ -14,4 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('welcome');
-Route::get('/{product}', 'HomeController@show')->name('product.show');
+Route::get('/{product}', 'HomeController@show');
+
+// Route test
+Route::get('/test/show', 'HomeController@showTest')->name('product.show');
