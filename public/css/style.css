@@ -1,0 +1,70 @@
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 4px solid black;
+}
+
+.text-mark {
+  font-family: "Dancing Script", cursive;
+}
+
+.bg-banner {
+  padding: 20px 20px;
+  margin-top: 10px;
+  background-image: url("https://picsum.photos/1080/500");
+  background-size: cover;
+}
+
+.carousel-head {
+  /* any dimensions are fine, it can be responsive with max-width */
+  width: 100;
+  height: 512px;
+}
+
+.carousel-head .carousel-inner {
+  /* make sure your .items will get correct height */
+  height: 100%;
+}
+
+.carousel-head .carousel-item {
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-head .carousel-item img {
+  visibility: hidden;
+}
+
+.carousel-head .carousel-caption {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.256);
+}
+
+.card-product {
+  border: 1px solid rgba(4, 97, 151, 0.795);
+  height: 350px;
+}
+
+.cf {
+  position: relative;
+  width: 250px;
+  height: 290px;
+  margin: 0 auto;
+}
+
+.cf img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.cf img.top:hover {
+  opacity: 0;
+}
+
