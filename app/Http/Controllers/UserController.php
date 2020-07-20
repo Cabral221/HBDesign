@@ -36,7 +36,7 @@ class UserController extends Controller
             'amount' => 'required|min:1',
         ]);
         
-        // dd($request->all(), $product);
+        dd($request->all(), $product);
         $product->commandes()->create([
             'firstname' => $request->first_name,
             'lastname' => $request->last_name,
@@ -46,7 +46,7 @@ class UserController extends Controller
         ]);
 
         return redirect()
-                ->route('admin.product.show', $product)
+                ->route('product.show', $product)
                 ->with('success','Votre commande a été enregistré avec succés ! Notre service commerciale vous rappelera dans les plus bref delais pour confirmer la commande.');
     }
 
