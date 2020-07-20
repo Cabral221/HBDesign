@@ -106,16 +106,22 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-8 text-center">
-                    <p class="text-describe text-mark">Une marque qui refléte la société sénégalaise à travers les mots wolofs ou proverbes utilisés sur les t shirts. On y ajoute aussi la classe mais faut savoir qu'avoir de la classe n’a aucun rapport avec le fait d’avoir de l’argent.</p>
-                    <div class="text">
-                        <p>
+                    <p class="text-describe text-mark">Une marque qui refléte la société sénégalaise à travers les mots wolofs ou proverbes utilisés.</p>
+                    <div class="text mt-2 mb-2">
                             <h3>Suivez-nous sur</h3>
-                        </p>
-                        <p>
-                            <a href="https://www.facebook.com/Hbdesignofficiel/" class="icon icon-facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
-                            <a href="https://www.instagram.com/hbdesignn__/" class="icon icon-instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
-                            <a href="https://twitter.com/homme_beau_corp" class="icon icon-twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-                        </p>
+                        <div class="text-center">
+                            <a href="https://www.facebook.com/Hbdesignofficiel/" class="icon icon-facebook m-1"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                            <a href="https://www.instagram.com/hbdesignn__/" class="icon icon-instagram m-1"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                            <a href="https://twitter.com/homme_beau_corp" class="icon icon-twitter m-1"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="text mt-2 mb-2">
+                        <h3>Contactez-nous</h3>
+                        <div class="text-center">
+                            <a href="https://www.facebook.com/Hbdesignofficiel/" class="icon icon-phone m-1"><i class="fa fa-phone" aria-hidden="true"></i> +221778090148</a>
+                        </div>
                     </div>
                 </div>
             </div>

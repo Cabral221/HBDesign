@@ -47,7 +47,10 @@
     </div>
 
     <div class="container">
-        <p><h2>Commandez vos chaussures de design unique en quelques secondes.</h2></p>
+        <div class="text-center">
+          <p><h2 class="text-mark">Commandez vos chaussures de design unique en quelques secondes.</h2></p>
+
+        </div>
         <hr>
         <div class="row">
             @foreach ($products as $product)
@@ -89,7 +92,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-8 text-center">
-                    <p class="text-describe text-mark">Une marque qui refléte la société sénégalaise à travers les mots wolofs ou proverbes utilisés sur les t shirts. On y ajoute aussi la classe mais faut savoir qu'avoir de la classe n’a aucun rapport avec le fait d’avoir de l’argent.</p>
+                    <p class="text-describe text-mark">Une marque qui refléte la société sénégalaise à travers les mots wolofs ou proverbes utilisés.</p>
                     <div class="text mt-2 mb-2">
                             <h3>Suivez-nous sur</h3>
                         <div class="text-center">
