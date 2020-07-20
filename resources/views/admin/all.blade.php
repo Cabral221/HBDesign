@@ -41,7 +41,7 @@
                                         <br>
                                         <img src="{{ '/'.$c->product->images[0]->image }}" alt="image produit" class="mr-3" height="39px">
                                         @if ($c->product->id < 5)
-                                            <img src="{{ '/'.$c->product->images[1]->image) }}" alt="image produit" height="39px">                                        
+                                            <img src="{{ '/'.$c->product->images[1]->image }}" alt="image produit" height="39px">                                        
                                         @endif
                                     </td>
                                     <td>{{ $c->lastname }}</td>
