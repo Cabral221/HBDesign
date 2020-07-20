@@ -18,10 +18,10 @@ class ProductSeeder extends Seeder
             ]);
 
             if ($i > 4) {
-                $product->images()->create([ 'image' => 'img/product/product'.$i.'.jpg' ]);
+                $product->images()->create([ 'image' => 'img/product/product'.$i.'.JPG' ]);
             }else{
-                $product->images()->create([ 'image' => 'img/product/product'.$i.'.jpg' ]);
-                $product->images()->create([ 'image' => 'img/product/product'.$i.'2.jpg' ]);
+                $product->images()->create([ 'image' => 'img/product/product'.$i.'.JPG' ]);
+                $product->images()->create([ 'image' => 'img/product/product'.$i.'2.JPG' ]);
             }
 
         }
