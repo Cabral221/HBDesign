@@ -5,15 +5,60 @@ hr {
   border-top: 4px solid black;
 }
 
+body {
+  padding-top: 70px;
+}
+
 .text-mark {
   font-family: "Dancing Script", cursive;
+}
+
+.text-describe {
+  font-size: 1.5rem;
 }
 
 .bg-banner {
   padding: 20px 20px;
   margin-top: 10px;
-  background-image: url("https://picsum.photos/1080/500");
+  background-image: url("/img/bg-banner.jpg");
   background-size: cover;
+}
+
+.icon {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.icon:hover {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.icon-facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.icon-instagram {
+  background: #3f729b;
+  color: #fff;
+}
+
+.icon-twitter {
+  background: #00acee;
+  color: #fff;
+}
+
+.icon-phone {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.nav-home {
+  font-size: 1.5rem;
 }
 
 .carousel-head {
@@ -43,7 +88,7 @@ hr {
   font-weight: bold;
   margin-bottom: 2rem;
   border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0.256);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .card-product {
@@ -66,5 +111,29 @@ hr {
 
 .cf img.top:hover {
   opacity: 0;
+}
+
+.card-header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-header a:hover {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.link-tel {
+  text-decoration: none;
+  color: #fff;
+  padding: 2rem 1rem;
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.link-tel:hover {
+  text-decoration: none;
+  color: #fff;
 }
 

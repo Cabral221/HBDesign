@@ -8,8 +8,8 @@
           <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image: url(http://placehold.it/1300x512);">
-            <img class="first-slide" src="{{ 'https://picsum.photos/1300/512' }}"  alt="First slide">
+          <div class="carousel-item active" style="background-image: url('{{ asset('img/product/slide.jpeg') }}');">
+            <img class="first-slide" src="{{ asset('img/product/slide.jpeg') }}"  alt="First slide">
             <div class="container">
               <div class="carousel-caption text-center text-mark text-dark rounded">
                 <h1>Bienvenue dans l'univers de HB Design Sénégal.</h1>
@@ -17,8 +17,8 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item" style="background-image: url(http://placehold.it/1300x512);">
-            <img class="second-slide" src="{{ 'https://picsum.photos/1300/512' }}" alt="Second slide">
+          <div class="carousel-item" style="background-image: url('{{ asset('img/product/slide.jpeg') }}');">
+            <img class="second-slide" src="{{ asset('img/product/slide.jpeg') }}" alt="Second slide">
             <div class="container">
               <div class="carousel-caption text-center text-mark text-dark rounded">
                 <h1>Bienvenue dans l'univers de HB Design Sénégal.</h1>
@@ -26,8 +26,8 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item" style="background-image: url(http://placehold.it/1300x512);">
-            <img class="third-slide" src="{{ 'https://picsum.photos/1300/512' }}" alt="Third slide">
+          <div class="carousel-item" style="background-image: url('{{ asset('img/product/slide.jpeg') }}');">
+            <img class="third-slide" src="{{ asset('img/product/slide.jpeg') }}" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-center text-mark text-dark rounded">
                 <h1>Bienvenue dans l'univers de HB Design Sénégal.</h1>
@@ -47,113 +47,43 @@
     </div>
 
     <div class="container">
-        <p><h2>Faites-vous plaisir en commandant vos produits en quelques secondes.</h2></p>
+        <p><h2>Commandez vos chaussures de design unique en quelques secondes.</h2></p>
         <hr>
         <div class="row">
-            {{-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <a href="#" class=" link-product">
-                    <div class="card-product d-flex align-items-end flex-column bd-highlight">
-                        <div class="cf">
-                            <img class="bottom" src="https://picsum.photos/250/290" />
-                            <img class="top" src="https://picsum.photos/249/289" />
+            @foreach ($products as $product)
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 pt-3 pb-3">
+                    <div id="carouselExampleControls{{ $product->id }}" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            @foreach ($product->images as $i)
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <img class="d-block w-100" src="{{ asset($i->image) }}" alt="slide-{{ '$i' }}">
+                                </div>
+                            @endforeach
                         </div>
-                        <div class="text-center mt-auto align-self-center">
-                            <h3 class="text-center product-title">Mon titre de</h3>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls{{ $product->id }}" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls{{ $product->id }}" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                </a>
-            </div> --}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 pt-3 pb-3">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{'https://picsum.photos/250/290'}}" alt="First slide">
+                    <div class="div-title pt-2 pb-2 px-auto text-center">
+                        <div class="header">
+                            {{-- <h4>Chaussure Noir cuir</h4> --}}
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{'https://picsum.photos/249/289'}}" alt="Second slide">
-                        </div>
+                        <a href="{{ route('product.show',[$product]) }}" class="link-product btn btn-dark">
+                            <p class="text-center mt-auto mb-1">commander</p>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-                <div class="div-title pt-2 pb-2 px-auto text-center">
-                    <div class="header">
-                        <h4>Chaussure Noir cuir</h4>
-                    </div>
-                    <a href="{{ route('product.show') }}" class="link-product btn btn-dark">
-                        <p class="text-center mt-auto mb-1">commander</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 pt-3 pb-3">
-                <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{'https://picsum.photos/250/290'}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{'https://picsum.photos/249/289'}}" alt="Second slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="div-title pt-2 pb-2 px-auto text-center">
-                    <div class="header">
-                        <h4>Chaussure Blanc cuir</h4>
-                    </div>
-                    <a href="{{ route('product.show') }}" class="link-product btn btn-dark">
-                        <p class="text-center mt-auto mb-1">commander</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 pt-3 pb-3">
-                <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{'https://picsum.photos/250/290'}}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{'https://picsum.photos/249/289'}}" alt="Second slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="div-title pt-2 pb-2 px-auto text-center">
-                    <div class="header">
-                        <h4>Chaussure Blue cuir</h4>
-                    </div>
-                    <a href="{{ route('product.show') }}" class="link-product btn btn-dark">
-                        <p class="text-center mt-auto mb-1">commander</p>
-                    </a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 
 
-    <div class="bg-banner text-mark">
+    <div class="bg-banner">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
@@ -162,7 +92,23 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-8 text-center">
-                    <p><h1>Faites-vous plaisir en commandant vos produits en quelques secondes.</h1></p>
+                    <p class="text-describe text-mark">Une marque qui refléte la société sénégalaise à travers les mots wolofs ou proverbes utilisés sur les t shirts. On y ajoute aussi la classe mais faut savoir qu'avoir de la classe n’a aucun rapport avec le fait d’avoir de l’argent.</p>
+                    <div class="text mt-2 mb-2">
+                            <h3>Suivez-nous sur</h3>
+                        <div class="text-center">
+                            <a href="https://www.facebook.com/Hbdesignofficiel/" class="icon icon-facebook m-1"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                            <a href="https://www.instagram.com/hbdesignn__/" class="icon icon-instagram m-1"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                            <a href="https://twitter.com/homme_beau_corp" class="icon icon-twitter m-1"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="text mt-2 mb-2">
+                        <h3>Contactez-nous</h3>
+                        <div class="text-center">
+                            <a href="https://www.facebook.com/Hbdesignofficiel/" class="icon icon-phone m-1"><i class="fa fa-phone" aria-hidden="true"></i> +221778090148</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

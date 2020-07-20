@@ -6,19 +6,57 @@ hr {
     border: 0;
     border-top: 4px solid rgba(0, 0, 0, 1);
 }
+body{
+    padding-top: 70px;
+}
 
 .text-mark {
     font-family: 'Dancing Script', cursive;
+}
+.text-describe {
+    font-size: 1.5rem;
 }
 
 .bg-banner {
     padding: 20px 20px;
     margin-top: 10px;
-    background-image: url("https://picsum.photos/1080/500");
+    background-image: url("/img/bg-banner.jpg");
     background-size: cover;
 }
+.icon {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+    }
 
+}
+.icon-facebook {
+    background: #3b5998;
+    color: #fff;
+}
+.icon-instagram {
+    background: #3f729b;
+    color: #fff;
+}
+.icon-twitter {
+    background: #00acee;
+    color: #fff;
+}
+.icon-phone{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.623);
+}
 // End generic
+// Navbat
+.nav-home {
+    font-size: 1.5rem;
+}
+// End Navbar
 // Caroussel
 .carousel-head {
     /* any dimensions are fine, it can be responsive with max-width */
@@ -47,7 +85,7 @@ hr {
     font-weight: bold;
     margin-bottom: 2rem;
     border: 2px solid white;
-    background-color: rgba(255, 255, 255, 0.256);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 // End Caroussel
 
@@ -56,16 +94,6 @@ hr {
     border: 1px solid rgba(4, 97, 151, 0.795);
     height: 350px;
 }
-
-.link-product {
-    // text-decoration: none;
-    // color: black;
-    // &:hover{
-    //     color: red;
-    //     text-decoration: none;
-    // }
-}
-
 .cf {
     position: relative;
     width: 250px;
@@ -86,3 +114,27 @@ hr {
     opacity: 0;
 }
 // End Card Product
+// Card
+.card-header a{
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+// End Card
+// Link telephone
+.link-tel{
+    text-decoration: none;
+    color: #fff;
+    padding: 2rem 1rem;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.623);
+    &:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+// End Link telephone
