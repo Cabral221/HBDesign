@@ -56,7 +56,7 @@
                         <div class="carousel-inner">
                             @foreach ($product->images as $i)
                                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                    <img class="d-block w-100" src="{{ asset($i->image) }}" alt="slide-{{ '$i' }}">
+                                    <img class="d-block w-100" src="{{ '/'.$i->image }}" alt="slide-{{ '$i' }}">
                                 </div>
                             @endforeach
                         </div>
@@ -70,9 +70,6 @@
                         </a>
                     </div>
                     <div class="div-title pt-2 pb-2 px-auto text-center">
-                        <div class="header">
-                            {{-- <h4>Chaussure Noir cuir</h4> --}}
-                        </div>
                         <a href="{{ route('product.show',[$product]) }}" class="link-product btn btn-dark">
                             <p class="text-center mt-auto mb-1">commander</p>
                         </a>

@@ -15,7 +15,7 @@
                     <div class="row">
                         @foreach ($product->images as $i)
                             <div class="col-xs-12 col-sm-6">
-                                <img src="{{ asset($i->image) }}" width="100%" style="margin-bottom: 2rem" alt="chaussure">
+                                <img src="{{ '/'.$i->image }}" width="100%" style="margin-bottom: 2rem" alt="chaussure">
                             </div>
                         @endforeach
                     </div>

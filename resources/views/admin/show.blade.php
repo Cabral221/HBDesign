@@ -22,9 +22,9 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <h4>Produit : {{ $commande->product->libele }}</h4>
-                        <img src="{{ asset($commande->product->images[0]->image) }}" height="200px" alt="image produit">
+                        <img src="{{ '/'.$commande->product->images[0]->image }}" height="200px" alt="image produit">
                         @if ($commande->product->id < 5)
-                        <img src="{{ asset($commande->product->images[1]->image) }}" height="200px" alt="image produit">
+                        <img src="{{ '/'.$commande->product->images[1]->image }}" height="200px" alt="image produit">
                         @endif
                     </div>
                 </div>
