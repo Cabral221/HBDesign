@@ -36,7 +36,7 @@ class UserController extends Controller
             'amount' => 'required|min:1',
         ]);
         
-        dd($request->all(), $product);
+        // dd($request->all(), $product);
         $product->commandes()->create([
             'firstname' => $request->first_name,
             'lastname' => $request->last_name,
